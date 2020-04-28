@@ -33,6 +33,8 @@ public class Test_Steps {
 		    driver.findElement(By.id("Password")).sendKeys(password);
 
 		    driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")).click();
+		     String title = driver.getTitle();
+                 System.out.println("Title is: ", +title);
 		    driver.close();
 	}
 
